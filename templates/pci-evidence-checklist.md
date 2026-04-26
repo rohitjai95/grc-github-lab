@@ -1,6 +1,18 @@
 # PCI DSS Evidence Checklist
 
-Use this checklist to collect, review, and document evidence for PCI DSS control validation. Record the assessment period, system scope, evidence owner, and reviewer for each item.
+## Purpose
+
+Use this checklist to collect, review, and document audit-ready evidence for PCI DSS control validation. For each item, confirm the evidence is complete, current, tied to the assessment scope, and traceable to the related ticket, screenshot, or repository record.
+
+## Evidence Quality Checklist
+
+Before marking evidence complete, confirm:
+
+- Evidence covers the assessment period and in-scope systems or processes.
+- Screenshots show the system name, relevant setting or record, and capture date where practical.
+- Ticket links, change records, or approvals are included for sampled activity.
+- Evidence owner and reviewer are identifiable.
+- Exceptions, gaps, or compensating controls are documented with follow-up actions.
 
 ## Access Control
 
@@ -59,8 +71,16 @@ Use this checklist to collect, review, and document evidence for PCI DSS control
 | Assessment period |  |
 | In-scope systems or processes |  |
 | Evidence repository location |  |
+| Ticket links |  |
+| Screenshot links or filenames |  |
 | Open evidence gaps |  |
 | Exceptions or compensating controls |  |
+
+## Reviewer Sign-Off
+
+| Field | Details |
+| --- | --- |
 | Reviewer |  |
 | Review date |  |
 | Final disposition |  |
+| Follow-up owner and due date |  |
