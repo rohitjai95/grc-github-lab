@@ -1,0 +1,89 @@
+name: PCI Evidence Review
+description: Track PCI DSS evidence review for a system or application.
+title: "PCI Evidence Review: "
+labels:
+  - pci
+  - evidence-review
+body:
+  - type: input
+    id: pci-control-reference
+    attributes:
+      label: PCI DSS control reference
+      description: Enter the PCI DSS requirement or control reference being reviewed.
+      placeholder: "Example: PCI DSS 4.0 Requirement 8.3.6"
+    validations:
+      required: true
+
+  - type: input
+    id: system-application-name
+    attributes:
+      label: System or application name
+      description: Identify the system, application, service, or environment in scope.
+      placeholder: "Example: Customer Portal"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: evidence-type
+    attributes:
+      label: Evidence type
+      description: Select the primary type of evidence being reviewed.
+      options:
+        - Screenshot
+        - Report
+        - Configuration export
+        - Log extract
+        - Policy or procedure
+        - Attestation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence-links
+    attributes:
+      label: Evidence links
+      description: Provide links to evidence artifacts, tickets, documents, or repository paths.
+      placeholder: |
+        - https://...
+        - Related ticket or document link
+    validations:
+      required: true
+
+  - type: dropdown
+    id: review-outcome
+    attributes:
+      label: Review outcome
+      description: Select the current review result.
+      options:
+        - Pass
+        - Fail
+        - Needs Follow-up
+    validations:
+      required: true
+
+  - type: input
+    id: reviewer-name
+    attributes:
+      label: Reviewer name
+      placeholder: "Example: Jane Analyst"
+    validations:
+      required: true
+
+  - type: input
+    id: review-date
+    attributes:
+      label: Review date
+      description: Use ISO format where possible.
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes-remediation
+    attributes:
+      label: Notes or remediation required
+      description: Summarize findings, follow-up questions, remediation actions, or compensating context.
+      placeholder: "Add review notes, remediation owner, due date, or follow-up details."
+    validations:
+      required: false
